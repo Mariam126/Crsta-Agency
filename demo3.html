@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crsta Agency</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/animate.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/demo3.css">
+<link rel="stylesheet" href="css/demo2.css">
+  <script src="js/respond.min.js"></script>
+  <script src="js/html5shiv.min.js"></script>
+</head>
+<body >
+    <div class="main-wrapper">
+         <!-- navbar section -->
+    <nav
+    id="navbar-fixed"
+    class="navbar secondStyleNavbar navbar-expand-lg  animate__animated animate__fadeInDown animate__delay-0.75s animate-duration: 0s"
+    style="background-color: transparent"
+  >
+    <div class="container">
+      <a class="navbar-brand" href="#"
+        ><img src="./images/Untitled_design-removebg-preview.png" alt="crsta"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="navbar-toggler"
+      >
+        <span class="fa-solid fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button
+          type="button"
+          class="btn position-relative d-lg-none"
+          id="false-icon"
+        >
+          <i
+            class="fa-regular fa-circle-xmark"
+            style="color: white; width: 30px; height: 30px"
+          ></i>
+        </button>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              aria-current="page"
+              href="index.html"
+              >Home</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Demo1</a></li>
+              <li><a class="dropdown-item" href="demo2.html">Demo2</a></li>
+              <li><a class="dropdown-item" href="demo3.html"> Demo3-One Page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="aboutus.html"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              pages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="team.html"> Our Team</a></li>
+              <li>
+                <a class="dropdown-item" href="projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="singleProject.html"> Single Project</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="pricing.html">Pricing</a>
+              </li>
+              <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#services.html"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Blog
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Blog Grid</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Blog Default</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Blog Post</a>
+              </li>
+            
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#index.html"
+              >contacts Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar section -->
+   <div class="banner background-img herosection">
+    <div class="container">
+        <div class="row">
+            <div class="wrapper">
+            <div class="col-lg-6">
+                <div class="content">
+                    <h1>Innovate your powerful business strategy</h1>
+                    <p>The agency will support to develop innovation and technology to startups. It could solve the needs of your customers.</p>
+            <div class="buttonContent">
+                <div class="button">Get Started</div>
+                <div class="video-container">
+                    <button class="play-button" id="playButton">
+                      <svg width="40" height="40" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" fill="white" />
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- Modal for video -->
+                  <div id="videoModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" id="closeModal">&times;</span>
+                      <video controls>
+                        <source src="images/down-time.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+            </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-sm-4">
+                <img src="./images/content-05.png" alt="" class="w-lg-100 w-md-75 w-sm-50 img-fluid">
+            </div>
+          
+        </div>
+    
+        </div>
+    </div>
+    <div class="shape-img">
+        <img src="./images/header-bg03.png" class="img-fluid width-100" alt="" >
+    </div>
+   </div>
+   </div>
+ <!-- services -->
+ <div class="hero-section-service services">
+    <div class="container">
+      <div class="row">
+        <div class="head">
+          <h1>We Provide Some Services</h1>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 fade-bottom-delay1 reveal">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-clone text-theme-color"></i>
+              <div class="big-circle"></div>
+              <div class="small-circle"></div>
+            </div>
+            <h2>Creative Design</h2>
+            <p>
+              We provide best and solid solution for your impressive
+              business.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 fade-bottom-delay2 reveal">
+          <div class="box">
+            <div class="icon">
+              <i class="fab fa-accusoft text-theme-color"></i>
+              <div class="big-circle"></div>
+              <div class="small-circle"></div>
+            </div>
+            <h2>Responsive Layout</h2>
+            <p>
+              We provide best and solid solution for your impressive
+              business.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 fade-bottom-delay3 reveal">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-chart-pie text-theme-color"></i>
+              <div class="big-circle"></div>
+              <div class="small-circle"></div>
+            </div>
+            <h2>Fast Services</h2>
+            <p>
+              We provide best and solid solution for your impressive
+              business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="designlayout" style=background-color:#f7f7f7>
+    <div class="container">
+      <div class="row">
+        <div class="content">
+          <div class="inside-content">
+        <div class="col-lg-6 col-md-12">
+          <img src="./images/content-06.png" alt="" class="img-fluid">
+
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <h2>This Layout designed for the multipurpose </h2>
+          <p>Tempora incidunt ut labore et dolore exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Tempora incidunt ut labore et dolore exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <div class="button">Learn More</div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    <div class="designlayout">
+    <div class="container">
+   <div class="row">
+        <div class="content">
+          <div class="inside-content">
+            <div class="col-lg-6">
+              <div class="partsection">
+                <div class="paragraph">
+                  <h2>We are creating powerful tool for your customer</h2>
+                  <p>
+                    Duis Integration aute irure design in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non design
+                    proident.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="circle"></div>
+                  <p>Exclusive design</p>
+                </div>
+                <div class="box">
+                  <div class="circle"></div>
+                  <p>Life time supports</p>
+                </div>
+                <div class="box">
+                  <div class="circle"></div>
+                  <p>Solve your problem with us</p>
+                </div>
+                <div class="box">
+                  <div class="circle"></div>
+                  <p>We Provide Awesome Services</p>
+                </div>
+                <div class="box">
+                  <div class="circle"></div>
+                  <p>Your business deserves best software</p>
+                </div>
+              </div>
+            </div>
+        <div class="col-lg-6 col-md-12">
+          <img src="./images/content-07.png" alt="" class="img-fluid">
+
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="counter-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="counter-box">
+            <span><i class="far fa-user"></i></span>
+            <h3 class="countup" data-max="800">1+</h3>
+            <h5>Satisfied Visitors</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="counter-box">
+            <span><i class="far fa-smile"></i></span>
+            <h3 class="countup" data-max="860">1+</h3>
+            <h5>Happy Clints</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="counter-box">
+            <span><i class="fas fa-trophy"></i></span>
+            <h3 class="countup" data-max="400">1+</h3>
+            <h5>Awards Wining</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="counter-box">
+            <span><i class="far fa-life-ring"></i></span>
+            <h3 class="countup" data-max="100">1+</h3>
+            <h5>Consultation</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     <!-- start pricing -->
+     <div class="pricing ">
+      <div class="text text-center m-5">
+        <h1>Pricing Table</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 reveal  faderight-delay1">
+            <div class="pricing-box">
+              <div class="head-plan">
+                <h2>Basic</h2>
+              </div>
+              <div class="body-plan">
+                <div class="price-plan">
+                  <h3><sub>$</sub>20</h3>
+                  <span>Per Month</span>
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="feature-plan">
+                  <ul>
+                    <li>24/7 Tech Support</li>
+                    <li>Advanced Options</li>
+                    <li>1GB Storage</li>
+                    <li>6GB Bandwidth</li>
+                    <li>Unlimited Support</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-plan">
+                <button class="button">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 reveal faderight-delay2 ">
+            <div class="pricing-box">
+              <div class="head-plan">
+                <h2>Standard</h2>
+              </div>
+              <div class="body-plan">
+                <div class="price-plan">
+                  <h3><sub>$</sub>30</h3>
+                  <span>Per Month</span>
+                  <i class="fa fa-briefcase"></i>
+                </div>
+                <div class="feature-plan">
+                  <ul>
+                    <li>24/7 Tech Support</li>
+                    <li>Advanced Options</li>
+                    <li>1GB Storage</li>
+                    <li>6GB Bandwidth</li>
+                    <li>Unlimited Support</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-plan">
+                <button class="button">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 reveal faderight-delay3 ">
+            <div class="pricing-box">
+              <div class="head-plan">
+                <h2>premium</h2>
+              </div>
+              <div class="body-plan">
+                <div class="price-plan">
+                  <h3><sub>$</sub>50</h3>
+                  <span>Per Month</span>
+                  <i class="fa fa-rocket"></i>
+                </div>
+                <div class="feature-plan">
+                  <ul>
+                    <li>24/7 Tech Support</li>
+                    <li>Advanced Options</li>
+                    <li>1GB Storage</li>
+                    <li>6GB Bandwidth</li>
+                    <li>Unlimited Support</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-plan">
+                <button class="button">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- end pricing -->
+                  <!-- start Testimontial -->
+     <div class="testimonals text-center position-relative  ">
+      <div class="text-center  ">
+        <h4 class="text-uppercase text-primary ">Clint's Love</h4>
+        <h1  class ="mb-4" style="color:black;font-weight:normal ;">Words from our clients</h1>
+      </div>
+      <div class="container ">
+    <div class="testimonials-content">
+      <div class=" swiper testimonals-slider js-testimonals-slider">
+        <div class="swiper-wrapper">
+        <div class=" swiper-slide testimonals-item">
+          <div class="info">
+            <img src="./images/t-1.jpg" alt="">
+    
+    
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi tempora ipsa, temporibus voluptas, molestiae nihil quis dignissimos non praesentium quos iusto voluptatibus exercitationem facilis ab modi libero dolorem debitis dolore. </p>
+          <div class="text-box">
+            <h3 class="name">Alivin Conoro</h3>
+            <span class="job">Networking Developer</span>
+          </div>
+          
+          </div>
+        </div>
+        <div class=" swiper-slide testimonals-item">
+          <div class="info">
+            <img src="./images/t-2.jpg" alt="">
+    
+    
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi tempora ipsa, temporibus voluptas, molestiae nihil quis dignissimos non praesentium quos iusto voluptatibus exercitationem facilis ab modi libero dolorem debitis dolore. </p>
+          <div class="text-box">
+            <h3 class="name">Finly Walkeror</h3>
+            <span class="job">App Developer</span>
+          </div>
+          
+          </div>
+        </div>
+        <div class=" swiper-slide testimonals-item">
+          <div class="info">
+            <img src="./images/t-3.jpg" alt="">
+    
+    
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi tempora ipsa, temporibus voluptas, molestiae nihil quis dignissimos non praesentium quos iusto voluptatibus exercitationem facilis ab modi libero dolorem debitis dolore. </p>
+          <div class="text-box">
+            <h3 class="name">Niamah Hower</h3>
+            <span class="job">Sales Developer</span>
+          </div>
+          
+          </div>
+        </div>
+        <div class=" swiper-slide testimonals-item">
+          <div class="info">
+            <img src="./images/t-1.jpg" alt="">
+    
+    
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi tempora ipsa, temporibus voluptas, molestiae nihil quis dignissimos non praesentium quos iusto voluptatibus exercitationem facilis ab modi libero dolorem debitis dolore. </p>
+          <div class="text-box">
+            <h3 class="name">Aliven carlos</h3>
+            <span class="job">Network Developer</span>
+          </div>
+          
+          </div>
+        </div>
+    
+      </div>
+      <div class="swiper-pagination js-testimonals-pagination"></div>
+    
+      </div>
+    
+      </div>
+    
+    </div>
+    </div>
+        <!-- end Testimontial -->
+            <!-- second-section -->
+    <div class="accordion-section">
+      <div class="container">
+        <div class="row">
+          <div class="content">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="img">
+                <img src="./images/content-02.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div
+                class="accordion accordion-flush show"
+                id="accordionFlushExample"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="flush-collapseOne"
+                    >
+                      how can i purchase them?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Tempora incidunt ut labore et dolore exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                      irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      why unique and creative design?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Tempora incidunt ut labore et dolore exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                      irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      are you ready to buy this theme?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Tempora incidunt ut labore et dolore exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                      irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end second-section -->
+             <!-- start blog -->
+             <div class="blog">
+              <div class="text-center ">
+                <h4 class="text-uppercase text-primary ">BLOG POSTS</h4>
+                <h1  class ="mb-5" style="color:black;font-weight:normal ;">Our Latest blog</h1>
+              </div>
+              <div class="container">
+                <div class="row text-center">
+                  <div class="col-lg-4 col-md-12 w-md-100 sect ">
+                    <div class="content w-md-100 w-lg-100">
+                      <div class="imge">
+                      <img src="./images/blog-1.jpg" class="" alt="...">
+                    </div>
+                      <div class="text">
+                        <h4 >Powerful tool for your customer</h4>
+                     <p class="text-black-50">Exercitation ullamco laboris nisi ut aliquip ex ea commodo. cillum dolore eu fugiat nulla pariatur commodo consequat.cillum dolore eu fugiat pariatur.
+            
+                     </p>
+                      </div>
+                <div class="date">
+                  <span>08 MAY</span>
+                </div>
+                      </div>
+                   
+                    </div>
+                    <div class="col-lg-4 col-md-12  w-md-100   ">
+                      <div class="content">
+                        <div class="imge">
+                        <img src="./images/blog-2.jpg" class="" alt="...">
+                      </div>
+                        <div class="text">
+                          <h4 >Growth your business strategy</h4>
+                       <p class="text-black-50">
+                        Exercitation ullamco laboris nisi ut aliquip ex ea commodo. cillum dolore eu fugiat nulla pariatur commodo consequat.cillum dolore eu fugiat pariatur.
+                       </p>
+                        </div>
+                        <div class="date">
+                          <span>09 JULY</span>
+                        </div>
+                        </div>
+                     
+                      </div>
+                      <div class="col-lg-4 col-md-12  w-md-100   ">
+                        <div class="content">
+                          <div class="imge">
+                          <img src="./images/blog-3.jpg" class="" alt="...">
+                        </div>
+                          <div class="text">
+                            
+                            <h4 >Digital service marketing agency</h4>
+                            <p class="text-black-50">
+                              Exercitation ullamco laboris nisi ut aliquip ex ea commodo. cillum dolore eu fugiat nulla pariatur commodo consequat.cillum dolore eu fugiat pariatur.
+                             </p>
+                          </div>
+                          <div class="date">
+                            <span>07 FEB</span>
+                          </div>
+                          </div>
+                       
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end blog -->
+               <!-- start-contact-->
+
+               <div class="contact"> 
+                <div class="contact-header">
+                  <h2>Get in Touch</h2>
+                  <p>We are available 24/7 by e-mail and phone. You can also ask a question about our services through our contact form that we regularly provide.</p>
+                </div>
+             <div class="container">
+              <form action="" class="form">
+                <input type="text" placeholder="Your name here">
+              <input type="email"  placeholder="Your email here">
+              <input type="text" placeholder="Your company here">
+              <input type="tel" placeholder="Your number here">
+              <textarea required cols="60" rows="10" id="textarea" name="textarea" placeholder=" tell us a few words" class="textarea"></textarea>
+              <input type="text" placeholder="type the blew word" id="input">
+                        </form>
+                        <img src="./images/courier-new-light.png" alt="">
+                        <div class="button">SUMBIT COMMENT</div>
+             </div>
+            
+
+               </div>
+                  <!-- end-contact-->
+                      <!-- start footer -->
+         <footer class="text-center text-lg-start   text-muted position-relative">
+          <!-- Section: Social media -->
+          <section class="d-flex   icons container justify-content-center justify-content-lg-between p-4 ">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block text-black mb-lg-3">
+              <span class=" ms-5">Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div>
+              <a href="" class="me-4 ">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="me-4 ">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="me-4">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="me-4 ">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="me-4 ">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="me-4 ">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+        
+          <!-- Section: Links  -->
+          <section class="mt-5">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                <img src="./images/logo-footer-small.png" alt="">
+                  <p class="mt-5">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4 ">
+                    Quick Links
+                  </h6>
+                  <p>
+                    <a href="#!" >About Us</a>
+                  </p>
+                  <p>
+                    <a href="#!" >Case Study</a>
+                  </p>
+                  <p>
+                    <a href="#!" >Our Blog</a>
+                  </p>
+                  <p>
+                    <a href="#!" >Our Services</a>
+                  </p>
+                  <p>
+                    <a href="#!" >Contact Us</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4 ">
+                  Services
+                  </h6>
+                  <p>
+                    <a href="#!" >Web Analytics</a>
+                  </p>
+                  <p>
+                    <a href="#!" >Social Marketing</a>
+                  </p>
+                  <p>
+                    <a href="#!" >Seo Marketing</a>
+                  </p>
+                  <p>
+                    <a href="#!">SMM Marketing</a>
+                  </p>
+                  <p>
+                    <a href="#!">Web Developing</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4 ">Contact</h6>
+                  <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    info@example.com
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                  <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-4 text-white" style="background-color:black;">
+            © 2024 Seo Powered by Mariam
+            <a class="text-reset fw-bold" href="index.html">CrstaAgency.com</a>
+          </div>
+          <!-- Copyright -->
+      
+         </footer>
+          <!-- end footer -->
+    <script src="js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+    <script src="js/bootstrap.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

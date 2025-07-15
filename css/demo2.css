@@ -1,0 +1,197 @@
+  .navbar .nav-item .nav-link{
+    color:black !important;
+}
+/*start herosection */
+.herosection{
+    position:relative;
+    background:#f5fafe ;
+   max-height:120vh;
+   margin-bottom:30px;
+ 
+}
+.herosection .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.herosection .wrapper .content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.herosection .wrapper .content h1{
+    color: #4e54c8;
+}
+.herosection .wrapper .content  p{
+    color: #555;
+}
+.herosection .wrapper .content .buttonContent{
+    display: flex;
+    gap:20px;
+    align-items:center;
+    justify-content:left;
+}
+.herosection .video-container{
+    position:static;
+    
+}
+  .herosection .video-container button{
+    border: 2px solid  #4e54c8 !important;
+    background:transparent;
+    border-radius: 50%;
+    padding:9px;
+    float:left !important;
+    
+    }
+    /*end herosection */
+    /*start servicesection */
+.hero-section-service{
+background:none !important;
+position:static !important;
+
+    }
+    .hero-section-service .box{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        gap:15px !important;
+        background: #fff;
+    border-radius: 7px;
+    -webkit-box-shadow: 0 0 9.9px 0.1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 9.9px 0.1px rgba(0, 0, 0, 0.1);
+    }
+    .hero-section-service .box svg{
+        position:static !important;
+       display: inline-block;
+        background: #f5fafe;
+    color: #4e54c8;
+    font-size: 35px !important;
+    padding:10px;
+    border: 1px solid #ececec;
+    border-radius: 50%;
+        text-align: center;
+        transform:none !important;
+    }
+    .hero-section-service .box:hover{
+background:#4e54c8;
+    }
+    .hero-section-service .box h2{
+        margin-top:0px !important;
+    }
+    .hero-section-service .box:hover h2,
+    .hero-section-service .box:hover p{
+        color:white;
+    }
+    /*end servicesection */
+    .howtodo{
+        background:#f5fafe;
+        margin: 0  0 50px 0;
+    }
+    .howtodo .wrapper{
+        display:flex;
+        flex-direction: column;
+        gap:30px;
+    }
+.howtodo .body{
+display:flex;
+justify-content: center;
+align-items: center;
+padding:60px 0;
+gap:20px;
+}
+/*start pricing*/
+
+.pricing,.testimonals,.blog ,.contact{
+    position: static !important;
+    margin: 10px 0 60px 0;
+}
+.pricing .col-lg-4:nth-of-type(1) .pricing-box .head-plan,
+.pricing .col-lg-4:nth-of-type(3) .pricing-box .head-plan{
+    background: black !important;
+  }
+  .pricing .pricing-box .body-plan .price-plan span,
+  .pricing  .pricing-box .body-plan .price-plan span{
+    color:#4e54c8 !important;
+
+  }
+  .pricing .pricing-box .body-plan .price-plan h3,
+  .contact .head-body h2 {
+    color:black !important;
+    font-weight: 600 !important;
+  }
+/**end pricing**/
+.blog{
+    background: #f5fafe !important;
+    padding:40px 0 !important;
+}
+.contact {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap:20px;
+    }
+
+.contact .head-body {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap:10px;
+    width:50%;
+}
+.contact .head-body p{
+    font-size: 14px;
+}
+.contact .input-group{
+width:600px;
+}
+footer{
+    position:static !important;
+    top:0 !important;
+}
+    @media  screen and (max-width:991px){
+        .herosection{
+            max-height:140vh;
+            margin-bottom: 98px;
+        }
+        .herosection .wrapper {
+            flex-direction: column;
+            padding:40px 0;
+          
+        }
+        .herosection .video-container button{
+            border: none !important;
+        
+            }
+            .hero-section-service{
+                position:static !important;
+                margin-top: 40px;
+                    }
+                .hero-section-service .head{
+                        margin-top: 50px;
+                    }
+    }
+    @media  screen and (max-width:600px){
+        .herosection{
+           
+            margin-bottom: 50px;
+        }
+        .herosection .wrapper {
+            flex-direction: column;
+            padding:40px 30px;
+        }
+        .contact .input-group{
+            width:80% !important;
+        }
+        .howtodo .body{
+    padding-right: 30px;
+    padding-left: 30px;
+    flex-direction: column;
+        }
+        .contact .head-body{
+            width:90%;
+            margin:0px 20px ;
+        }
+    }
+   
